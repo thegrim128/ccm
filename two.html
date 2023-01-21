@@ -1,0 +1,242 @@
+<html>
+<body bgcolor="lightgrey">
+<section>
+	<header>
+		<h1 style="
+		    align-self: center;
+		">Commpassion Of Christ Ministries</h1>
+	  <ul>
+	     <a href="ccm.html"><img src="bars.png"></a>
+	  </ul>
+	</header>
+</section>
+<h2 id="header"style="align-self: center; text-align: center">CCM Gallery</h2>
+<div id="parentDirLinkBox" style="visibility: hidden;">
+  <a id="parentDirLink" class="icon up" href="/C:/Users/chipo/OneDrive/Documents/two/..">
+    <span id="parentDirText">[parent directory]</span>
+  </a>
+</div>
+<table>
+	<thead>
+	  <tr class="header" id="theader">
+	    <th id="nameColumnHeader" class="dc" tabindex="0" role="button" data-order="1"
+		 style="
+    background: #8c9cb7;
+    border: none;
+    outline: none;
+    padding: 8px 14px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 3px;
+    cursor: pointer;">
+	    1</th>
+	    <th id="nameColumnHeader" class="dc" tabindex="0" role="button" data-order="1"
+		 style="
+    background: #8c9cb7;
+    border: none;
+    outline: none;
+    padding: 8px 14px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 3px;
+    cursor: pointer;">
+	    2</th>
+	    <th id="nameColumnHeader" class="dc" tabindex="0" role="button" data-order="1"
+		 style="
+    background: #8c9cb7;
+    border: none;
+    outline: none;
+    padding: 8px 14px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 3px;
+    cursor: pointer;">
+	    3</th>
+	    <th id="nameColumnHeader" class="dc" tabindex="0" role="button" data-order="1"
+		 style="
+    background: #8c9cb7;
+    border: none;
+    outline: none;
+    padding: 8px 14px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 3px;
+    cursor: pointer;">
+	    4</th>
+	  </tr>
+	</thead>
+	<tbody id="tbody">
+	  <tr>
+	    <td data-value="1.jpg">
+		<a class="icon file"draggable="true" href="
+		/C:/Users/chipo/OneDrive/Documents/two/1.jpg"><img 
+		style="display: block;-webkit-user-select: none;margin: auto;"
+		src="/C:/Users/chipo/OneDrive/Documents/two/1.jpg"
+		width="429" height="516"></a>
+	    <td class="dc" data-value="2.jpg">
+		<a class="icon file"draggable="true" href="
+		/C:/Users/chipo/OneDrive/Documents/two/2.jpg"><img 
+		style="display: block;-webkit-user-select: none;margin: auto;"
+		src="/C:/Users/chipo/OneDrive/Documents/two/2.jpg"
+		width="429" height="516"></a>
+	     <td class="dc" data-value="3.jpg">
+		<a class="icon file"draggable="true" href="
+		/C:/Users/chipo/OneDrive/Documents/two/3.jpg"><img 
+		style="display: block;-webkit-user-select: none;margin: auto;"
+		src="/C:/Users/chipo/OneDrive/Documents/two/3.jpg"
+		width="429" height="516"></a>
+	      <td class="dc" data-value="4.jpg">
+		<a class="icon file"draggable="true" href="
+		/C:/Users/chipo/OneDrive/Documents/two/4.jpg"><img 
+		style="display: block;-webkit-user-select: none;margin: auto;"
+		src="/C:/Users/chipo/OneDrive/Documents/two/4.jpg"
+		width="429" height="516"></a>
+	  </tr>
+	  <tr>
+	      <td data-value="5.jpg">
+		<a class="icon file"draggable="true" href="
+		/C:/Users/chipo/OneDrive/Documents/two/5.jpg"><img 
+		style="display: block;-webkit-user-select: none;margin: auto;"
+		src="/C:/Users/chipo/OneDrive/Documents/two/5.jpg"
+		width="429" height="516"></a>
+	    <td class="dc" data-value="6.jpg">
+		<a class="icon file"draggable="true" href="
+		/C:/Users/chipo/OneDrive/Documents/two/6.jpg"><img 
+		style="display: block;-webkit-user-select: none;margin: auto;"
+		src="/C:/Users/chipo/OneDrive/Documents/two/6.jpg"
+		width="429" height="516"></a>
+	     <td class="dc" data-value="7.jpg">
+		<a class="icon file"draggable="true" href="
+		/C:/Users/chipo/OneDrive/Documents/two/7.jpg"><img 
+		style="display: block;-webkit-user-select: none;margin: auto;"
+		src="/C:/Users/chipo/OneDrive/Documents/two/7.jpg"
+		width="429" height="516"></a>
+	     <td class="dc" data-value="8.jpg">
+		<a class="icon file"draggable="true" href="
+		/C:/Users/chipo/OneDrive/Documents/two/8.jpg"><img 
+		style="display: block;-webkit-user-select: none;margin: auto;"
+		src="/C:/Users/chipo/OneDrive/Documents/two/8.jpg"
+		width="429" height="516"></a>
+	  </tr>
+</table>
+<script>
+var loadTimeData;
+
+class LoadTimeData {
+  constructor() {
+    this.data_ = null;
+  }
+
+
+  set data(value) {
+    expect(!this.data_, 'Re-setting data.');
+    this.data_ = value;
+  }
+
+  valueExists(id) {
+    return id in this.data_;
+  }
+
+  getValue(id) {
+    expect(this.data_, 'No data. Did you remember to include strings.js?');
+    const value = this.data_[id];
+    expect(typeof value !== 'undefined', 'Could not find value for ' + id);
+    return value;
+  }
+
+  getString(id) {
+    const value = this.getValue(id);
+    expectIsType(id, value, 'string');
+    return (value);
+  }
+
+  getStringF(id, var_args) {
+    const value = this.getString(id);
+    if (!value) {
+      return '';
+    }
+  
+    const args = Array.prototype.slice.call(arguments);
+    args[0] = value;
+    return this.substituteString.apply(this, args);
+  }
+
+  substituteString(label, var_args) {
+    const varArgs = arguments;
+    return label.replace(/\$(.|$|\n)/g, function(m) {
+      expect(m.match(/\$[$1-9]/), 'Unescaped $ found in localized string.');
+      return m === '$$' ? '$' : varArgs[m[1]];
+    });
+  }
+
+  getSubstitutedStringPieces(label, var_args) {
+    const varArgs = arguments;
+    const pieces = (label.match(/(\$[1-9])|(([^$]|\$([^1-9]|$))+)/g) ||
+                    []).map(function(p) {
+
+      if (!p.match(/^\$[1-9]$/)) {
+        expect(
+            (p.match(/\$/g) || []).length % 2 === 0,
+            'Unescaped $ found in localized string.');
+        return {value: p.replace(/\$\$/g, '$'), arg: null};
+      }
+
+      return {value: varArgs[p[1]], arg: p};
+    });
+
+    return pieces;
+  }
+
+  getBoolean(id) {
+    const value = this.getValue(id);
+    expectIsType(id, value, 'boolean');
+    return (value);
+  }
+
+getInteger(id) {
+    const value = this.getValue(id);
+    expectIsType(id, value, 'number');
+    expect(value === Math.floor(value), 'Number isn\'t integer: ' + value);
+    return (value);
+  }
+  overrideValues(replacements) {
+    expect(
+        typeof replacements === 'object',
+        'Replacements must be a dictionary object.');
+    for (const key in replacements) {
+      this.data_[key] = replacements[key];
+    }
+  }
+  resetForTesting(newData = null) {
+    this.data_ = newData;
+  }
+  isInitialized() {
+    return this.data_ !== null;
+  }
+}
+  function expect(condition, message) {
+    if (!condition) {
+      throw new Error(
+          'Unexpected condition on ' + document.location.href + ': ' + message);
+    }
+  }
+
+  function expectIsType(id, value, type) {
+    expect(
+        typeof value === type, '[' + value + '] (' + id + ') is not a ' + type);
+  }
+
+  expect(!loadTimeData, 'should only include this file once');
+  loadTimeData = new LoadTimeData();
+
+  window.loadTimeData = loadTimeData;
+  
+console.warn('crbug/1173575, non-JS module files deprecated.');</script><script>loadTimeData.data = {"header":"Index of LOCATION","headerDateModified":"Date Modified","headerName":"Name","headerSize":"Size","language":"en","parentDirText":"[parent directory]","textdirection":"ltr"};</script>
+<script>start("C:\\Users\\chipo\\OneDrive\\Documents\\two\\");</script>
+<script>onHasParentDirectory();</script>
+<script>loadTimeData.data = {"header":"Index of LOCATION","headerDateModified":"Date Modified","headerName":"Name","headerSize":"Size","language":"en","parentDirText":"[parent directory]","textdirection":"ltr"};</script>
+</html>
